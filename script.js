@@ -28,10 +28,6 @@ class Calculator {
         if (this.currentOperand === '') 
             return
 
-
-        
-
-
         if (this.previousOperand !== '') {
             this.compute()
         }
@@ -46,11 +42,6 @@ class Calculator {
         const current = parseFloat(this.currentOperand)
         if (isNaN(prev) || isNaN(current)) 
             return
-
-
-        
-
-
         switch (this.operation) {
             case '+': computation = prev + current
                 break
@@ -96,7 +87,7 @@ class Calculator {
             }`
             
         }else {
-            his.previousOperandTextElement.innerText = ''
+            this.previousOperandTextElement.innerText = ''
         }
         
     }
